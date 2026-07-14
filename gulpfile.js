@@ -58,7 +58,7 @@ function scriptsBackend() {
 }
 
 function watch() {
-  gulp.watch('assets/less/main.less', stylesFrontend);
+  gulp.watch('assets/less/**/*.less', stylesFrontend);
   gulp.watch('assets/less/backend/**/*.less', stylesBackend);
   gulp.watch('assets/js/frontend/**/*.js', scriptsFrontend);
   gulp.watch('assets/js/backend/**/*.js', scriptsBackend);
